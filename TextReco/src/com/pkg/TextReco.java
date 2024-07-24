@@ -20,7 +20,7 @@ public class TextReco {
 	Tesseract ts;
 	public TextReco() {
 		ts = new Tesseract();
-//		ts.setDatapath("");
+		ts.setDatapath("");
 		ts.setLanguage("eng");
 		try {
 			String text = ts.doOCR(getImage("images/img.png"));
